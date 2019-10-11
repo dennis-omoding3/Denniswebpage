@@ -2,9 +2,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
             <title> denny teiger corporate</title>
             <!--external styling-->
             <style>
+                .info{color:green}
+                #come{color:red}
                     body {background-color: powderblue;}
                     h1   {color: blue;}
                     p    {color: red;}
@@ -12,8 +19,16 @@
     </head>
 <body>
 
-<h1>dennis page</h1>
+    <div class="container">
+    
+                <div class="col-lg-4"></div> 
+                <div class="col-lg-4"><h1>dennis page</h1></div>
+                <div class="col-lg-4"></div>
+    
+
 <!--inline styling the tags-->
+<div class="row">
+<div class="col-lg-4 col-sm-12">
 <p style="color:royalblue">This is a corporate page.</p><br>
 <!--title tag gives more information on the tag. the statement in the title will display upon hovering-->
 <p title="i am mancx">come visit us</p>
@@ -22,6 +37,8 @@
 <!--src, alt, target etc after the opening tags are attributes-->
 <img title="i am mancx"src="darwin.jpg" alt="darwin" width="80" height="80"><br><hr>
 <button>paste</button>
+</div>
+<div class="col-lg-4 col-sm-12">
 <!--ul =unordered list/bullets, ol=ordered list/numbering-->
 <ul>
     <li>kenya</li>
@@ -31,7 +48,9 @@
     <li>rwanda</li>
     <li>tanzania</li>
 </ol>
+</div>
 <!--pre tags takes care of spaces and line breaks in a paragraph( e.g in a poem)-->
+<div class="col-lg-4 col-sm-12">
 <pre>
     My Bonnie lies over the ocean.
   
@@ -41,7 +60,33 @@
   
     Oh, bring back my Bonnie to me.
   </pre>
-
+</div>
+</div>
+<div class="info">
+    some basic information
+</div>
+<div id="come">
+    come here now
+</div>
+<div>
+        <form action="/action_page.php">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+</div>
+</div>
 
 </body>
 </html>
